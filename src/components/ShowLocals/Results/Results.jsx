@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import ResultFilter from './ResultFilter/ResultFilter';
 import './component.css'
 class Header extends Component {
     constructor(props) {
@@ -8,7 +8,7 @@ class Header extends Component {
     }
     render() { 
         return (<div className="results-container">
-            
+            <ResultFilter />
         </div>  );
     }
 }
