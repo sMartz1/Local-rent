@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './component.css'
+
+import LocalResume from '../../LocalResume';
 //Recieves a list of locals to show.
 class FeaturedLocals extends Component {
     constructor(props) {
@@ -7,8 +9,11 @@ class FeaturedLocals extends Component {
         this.state = { items : this.props.items }
     }
     render() { 
-        return (<div className="featured-locals">
-        </div>  );
+        return (
+        <div className="featured-locals">
+            {this.props.locals.map((local)=><LocalResume local={local}/>)}
+        </div>  
+        );
     }
 }
  

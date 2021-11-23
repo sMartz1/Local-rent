@@ -3,6 +3,7 @@ import Main from './components/Main';
 import ShowLocals from './components/ShowLocals';
 import UniqueLocal from './components/UniqueLocal';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   let url = window.location.href;
@@ -14,6 +15,7 @@ function App() {
       {(url === 'main') && <Main />}
       {(url === 'locals-list') && <ShowLocals/>}
       {(url === 'local') && <UniqueLocal/>}
+      {/* <Footer /> */}
     </div>
   );
 }
