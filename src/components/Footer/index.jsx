@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import FooterNav from './FooterNav/FooterNav';
+import FooterNav from './FooterNav';
 
 class Footer extends Component {
     constructor(props) {

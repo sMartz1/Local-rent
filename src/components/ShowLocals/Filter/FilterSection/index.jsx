@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
-import FilterSection from './FilterSection/FilterSection';
+import FilterItem from '../FilterItem'
 import './component.css'
 
-class Filter extends Component {
+class FilterSection extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = { type : this.props.type }
     }
     render() { 
         return (<div className="filter-section">
-            <FilterSection />
-            <FilterSection />
-
+            <FilterItem type={"TypeAExample"} />
         </div>  );
     }
 }
  
-export default Filter;
+export default FilterSection;
