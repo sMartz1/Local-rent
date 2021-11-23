@@ -1,19 +1,21 @@
 import './App.css';
-import Main from './component/Main';
-import ShowLocals from './component/ShowLocals';
-import UniqueLocal from './component/UniqueLocal';
+import Main from './components/Main/Main';
+import ShowLocals from './components/ShowLocals/ShowLocals';
+import UniqueLocal from './components/UniqueLocal';
+import Router from './components/Router';
 import Header from './components/Header/Header';
  
 function App() {
-  const main = false;
-  const showLocals = false;
-  const uniqueLocals = false;
+
+  let url = window.location.href;
+  url = url.substring(url.indexOf('0/')+2, url.length);
+
   return (
     <div className="App">
       <Header />
-      {main && <Main />}
-      {showLocals && <ShowLocals/>}
-      {uniqueLocals && <UniqueLocal/>}
+      {(url === 'main') && <Main />}
+      {(url === 'locals-list') && <ShowLocals/>}
+      {(url === 'local') && <UniqueLocal/>}
     </div>
   );
 }
