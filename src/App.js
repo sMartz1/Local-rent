@@ -6,13 +6,13 @@ import Header from './components/Header/Header';
  
 function App() {
   const main = false;
-  const showLoclas = false;
+  const showLocals = false;
   const uniqueLocals = false;
   return (
     <div className="App">
       <Header />
       {main && <Main />}
-      {showLoclas && <ShowLocals/>}
+      {showLocals && <ShowLocals/>}
       {uniqueLocals && <UniqueLocal/>}
     </div>
   );
