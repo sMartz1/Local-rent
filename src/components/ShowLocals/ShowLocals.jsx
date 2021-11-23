@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Filter from '../Filter/Filter';
 import './component.css'
 
 
@@ -9,7 +10,7 @@ class ShowLocals extends Component {
     }
     render() { 
         return ( <div className="show-locals-container">
-            
+            <Filter />
         </div> );
     }
 }
