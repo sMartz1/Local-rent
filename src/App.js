@@ -5,14 +5,17 @@ import UniqueLocal from './components/UniqueLocal';
 import Header from './components/Header';
 
 function App() {
-    const main = false;
-    const showLocals = false;
-    const uniqueLocals = false;
-    return ( 
-      <div className = "App" >
-        <Header /> { main && < Main /> } { showLocals && < ShowLocals /> } { uniqueLocals && < UniqueLocal /> } 
-       </div>
-    );
+  let url = window.location.href;
+  url = url.substring(url.indexOf('0/')+2, url.length);
+
+  return (
+    <div className="App">
+      <Header />
+      {(url === 'main') && <Main />}
+      {(url === 'locals-list') && <ShowLocals/>}
+      {(url === 'local') && <UniqueLocal/>}
+    </div>
+  );
 }
 
 export default App;
