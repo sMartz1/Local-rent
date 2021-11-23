@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FilterSection from './FilterSection/FilterSection';
 import './component.css'
 
 class Filter extends Component {
@@ -8,7 +9,9 @@ class Filter extends Component {
     }
     render() { 
         return (<div className="filter-section">
-            
+            <FilterSection />
+            <FilterSection />
+
         </div>  );
     }
 }
