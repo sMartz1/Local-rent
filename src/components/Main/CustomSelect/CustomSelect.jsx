@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import './component.css'
-class Main extends Component {
+class CustomSelect extends Component {
     constructor(props) {
         super(props);
-        this.state = { }
+        this.state = { type : this.props.type }
     }
     render() { 
-        return (<div className="main-container">
+        return (<div className="custom-select">
         </div>  );
     }
 }
  
-export default Main;
+export default CustomSelect;
