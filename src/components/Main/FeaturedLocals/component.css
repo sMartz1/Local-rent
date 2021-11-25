@@ -1,5 +1,11 @@
-.featured-locals{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.slider{
+    width: 90%;
+    margin: auto;
+}
+
+body{
+    background-color: yellow;
 }
