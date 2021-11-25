@@ -1,4 +1,8 @@
 import './App.css';
+//Import slider library css.
+
+
+
 import Main from './components/Main';
 import ShowLocals from './components/ShowLocals';
 import UniqueLocal from './components/UniqueLocal';

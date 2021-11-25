@@ -1,0 +1,10 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+.gallery {
+    width: 95%;
+    margin: auto;
+}
+
+.img-slider {
+    height: 500px;
+}
