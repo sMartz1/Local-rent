@@ -5,12 +5,12 @@ import './component.css'
 class Gallery extends Component {
     constructor(props) {
         super(props);
-        this.state = {  settings : {dots: false,
+        this.state = {  settings : {dots: this.props.dots  != null ? this.props.dots : true ,
             infinite: true,
-            speed: 500,
+            speed: this.props.speed != null ? this.props.speed : 500,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true},
+            autoplay: this.props.autoPlay != null ? this.props.autoPlay : false},
          images : this.props.images }
     }
     render() { 
