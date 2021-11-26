@@ -20,5 +20,11 @@
 }
 
 .img-slider {
-    margin-top: -11em;
+    margin-top: -20em;
+}
+
+@media (max-width:400px) {
+    .img-slider {
+        margin-top: -10em;
+    }
 }
