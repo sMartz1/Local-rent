@@ -7,17 +7,18 @@
 }
 
 .img-slider {
-    width: max-content;
+    min-height: 600px;
+    min-width: 500px;
 }
 
 .slick-prev {
     margin-right: -30px;
 }
 
-.slick-list {
+.slick-track {
     height: 300px;
 }
 
 .img-slider {
-    margin-top: -300px;
+    margin-top: -11em;
 }

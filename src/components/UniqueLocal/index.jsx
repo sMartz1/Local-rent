@@ -20,7 +20,9 @@ class UniqueLocal extends Component {
       <div className="unique-local">
        <div className="local-title"><p>TITLE LOCAL</p></div>
         <Gallery images={this.state.images} speed={500} dots={false} autoPlay={true}/>
-        <div className="local_content"></div>
+        <div className="local_content">
+          <div className="local-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi velit consequatur alias repellat corporis perferendis magnam quidem eaque aliquid excepturi veniam facilis, esse nisi, voluptates natus vitae. Omnis, aperiam.</div>
+        </div>
       </div>
     );
   }
