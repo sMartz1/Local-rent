@@ -1,10 +1,23 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 .gallery {
-    width: 95%;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
+    height: 200px;
 }
 
 .img-slider {
-    height: 500px;
+    width: max-content;
+}
+
+.slick-prev {
+    margin-right: -30px;
+}
+
+.slick-list {
+    height: 300px;
+}
+
+.img-slider {
+    margin-top: -300px;
 }

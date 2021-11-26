@@ -5,11 +5,12 @@ import './component.css'
 class Gallery extends Component {
     constructor(props) {
         super(props);
-        this.state = {  settings : {dots: true,
+        this.state = {  settings : {dots: false,
             infinite: true,
             speed: 500,
             slidesToShow: 1,
-            slidesToScroll: 1},
+            slidesToScroll: 1,
+            autoplay: true},
          images : this.props.images }
     }
     render() { 
@@ -19,7 +20,7 @@ class Gallery extends Component {
                     return <img src={img} className="img-slider" alt="" key={img.toString()} />
                 })}
             </Slider>
-        </div>  );
+        </div>);
     }
 }
  

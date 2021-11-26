@@ -1,4 +1,20 @@
 .unique-local {
     min-height: 30rem;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.local-title {
+    display: flex;
+    margin-top: -45px;
+}
+
+.local-title>p {
+    position: relative;
+    margin-bottom: -2rem;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: 6rem;
+    font-size: 3rem;
+    z-index: 50;
 }

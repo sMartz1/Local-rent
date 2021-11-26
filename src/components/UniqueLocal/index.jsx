@@ -5,7 +5,7 @@ class UniqueLocal extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: this.props.title,
+      title: "Local en las ventas"/*this.props.title*/,
       prevLocal: this.props.prevLocal,
       nextLocal: this.props.nextLocal,
       images: [
@@ -18,8 +18,7 @@ class UniqueLocal extends Component {
   render() {
     return (
       <div className="unique-local">
-        UniqueLocalContainer
-        <div className="local-title">TITLE LOCAL</div>
+       <div className="local-title"><p>TITLE LOCAL</p></div>
         <Gallery images={this.state.images} />
         <div className="local_content"></div>
       </div>
@@ -27,4 +26,4 @@ class UniqueLocal extends Component {
   }
 }
 
-export default UniqueLocal;
+export default UniqueLocal
