@@ -15,15 +15,20 @@ class Main extends Component {
     }
     render() { 
         return (
-            <div className="main-container">
-                <h1>MAIN</h1>
-                <section className="search-container">
-                    <CustomSelect options={size}/>
-                    <CustomSelect options={type}/>
-                    <SearchBar/>
-                </section>
+            <div className="mainpage-container">
+                <header className="mainpage-header">
+                    <h1>Todos tenemos un sitio. Tu negocio, también</h1>
+                    <section className="mainpage-search">
+                        <CustomSelect options={size}/>
+                        <CustomSelect options={type}/>
+                        <SearchBar/>
+                    </section>
+                </header>
+                <main className="mainpage-content">
+                    <FeaturedLocals title={"Más demandados"} locals={locals}/>
+                    <FeaturedLocals title={"Últimas ofertas"} locals={locals}/>
+                </main>
                 
-                <FeaturedLocals locals={locals}/>
             </div>  
         );
     }
