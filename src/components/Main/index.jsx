@@ -17,7 +17,7 @@ class Main extends Component {
         return (
             <div className="mainpage-container">
                 <header className="mainpage-header">
-                    <h1>Todos tenemos un sitio. Tu negocio, también</h1>
+                    <h1>Todos tenemos un sitio. Tu negocio, también.</h1>
                     <section className="mainpage-search">
                         <CustomSelect options={size}/>
                         <CustomSelect options={type}/>

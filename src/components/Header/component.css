@@ -4,5 +4,6 @@
     z-index: 10;
     padding-top: 0.5rem;
     width: 100%;
-    background-color: coral;
+    background-color: coral;    
+    box-shadow: 1px 1px 5px black;
 }
