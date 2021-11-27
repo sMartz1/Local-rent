@@ -3,28 +3,4 @@
 .gallery {
     width: 100%;
     margin: 0 auto;
-    height: 200px;
-}
-
-.img-slider {
-    min-height: 600px;
-    min-width: 500px;
-}
-
-.slick-prev {
-    margin-right: -30px;
-}
-
-.slick-track {
-    height: 300px;
-}
-
-.img-slider {
-    margin-top: -20em;
-}
-
-@media (max-width:400px) {
-    .img-slider {
-        margin-top: -10em;
-    }
 }

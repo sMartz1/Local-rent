@@ -18,17 +18,33 @@ class UniqueLocal extends Component {
   render() {
     return (
       <div className="unique-local">
-       <div className="local-title"><p>TITLE LOCAL</p></div>
-        <Gallery images={this.state.images} speed={500} dots={false} autoPlay={true}/>
+       <div className="local-title"><p className="shadow-4">TITLE LOCAL</p></div>
+       
+        <Gallery images={this.state.images} imgClass={"img-slider-header"} className={"gallery gallery-header"}speed={500} dots={false} autoPlay={true} autoPlaySpeed={15000} arrow={false}/>
+       
         <div className="local_content">
+        
           <div className="local-information">
-          <div className="local-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi velit consequatur alias repellat corporis perferendis magnam quidem eaque aliquid excepturi veniam facilis, esse nisi, voluptates natus vitae. Omnis, aperiam.</div>
-          <div className="local-map">MAP WIP</div>  
-          </div>      
-          <div className="footer-slider">
-            Slider inferior de imagenes WIP
+          <div className="local-description">
+            <p className="title-description">Title local<span> - Rating 3.8/5 de 24 puntiaciones</span></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi velit consequatur alias repellat corporis perferendis magnam quidem eaque aliquid excepturi veniam facilis, esse nisi, voluptates natus vitae. Omnis, aperiam.</p></div>
+          <div className="local-specifications">
+          <p>200 m² construidos</p>
+          <p>Segunda mano/buen estado</p>
+          <p>Distribución 2 estancias</p>
+          <p>1 aseos o baños</p>
+          <p>Situado a pie de calle</p>
+          <p>2 escaparates</p>
+
           </div>
+          <div className="local-map">MAP WIP</div>  
+
+          </div>      
+         
         </div>
+        <div className="footer-slider">
+        <Gallery className={"footer-galery"} imgClass={"img-slider-footer"} images={this.state.images} speed={2000} dots={true} autoPlay={true} autoPlaySpeed={4000}/>
+          </div>
         
       </div>
     );
