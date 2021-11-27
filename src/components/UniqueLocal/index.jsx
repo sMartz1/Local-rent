@@ -30,7 +30,7 @@ class UniqueLocal extends Component {
         
           <div className="local-information">
           <div className="local-description">
-            <p className="title-description">Title local{/*this.state.title*/}<span> - Rating: {/*this.state.rating.score*/}4/5 de {/*this.state.rating.totalRatigns*/}24 puntiaciones</span></p>
+            <p className="title-description">Title local{/*this.state.title*/}<span> - Rating: {/*this.state.rating.score*/}4/5 de {/*this.state.rating.totalRatigns*/}24 puntuaciones</span></p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi velit consequatur alias repellat corporis perferendis magnam quidem eaque aliquid excepturi veniam facilis, esse nisi, voluptates natus vitae. Omnis, aperiam.</p></div>
             {/*this.state.description */}          
           <div className="local-specifications">
