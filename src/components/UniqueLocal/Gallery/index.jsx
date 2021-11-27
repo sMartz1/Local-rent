@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 
 import "./component.css";
+
 class Gallery extends Component {
   constructor(props) {
     super(props);
