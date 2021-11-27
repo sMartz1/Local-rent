@@ -2,16 +2,9 @@
 
 }
 .mainpage-header{
-    /* position: sticky;
-    top: 5rem;
-    z-index: -10; */
-    /* background: url('img/mainpage-img.jpg') no-repeat;
-    background-size: cover; */
     background: url('img/mainpage-img.jpg') fixed no-repeat 50% 50%;
     background-size: cover;
-
     min-height: calc(100vh - 4rem);
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

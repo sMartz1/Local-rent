@@ -7,3 +7,7 @@
     background-color: coral;    
     box-shadow: 1px 1px 5px black;
 }
+.search-modal{
+    position: absolute;
+    margin: auto;
+}

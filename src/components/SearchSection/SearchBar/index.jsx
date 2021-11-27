@@ -9,9 +9,10 @@ class SearchBar extends Component {
         this.state = {}
     }
     render() { 
-        return (<div className="search-bar-container">
+        return (
+        <div className="search-bar-container">
             <input type="text" placeholder="municipio, barrio, calle..."/>
-            <button><img src={search} alt="" /></button>
+            <button><img src={search} alt="search button" /></button>
         </div>  );
     }
 }
