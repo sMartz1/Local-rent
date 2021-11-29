@@ -1,0 +1,2 @@
+export const size = [['xtrasmall', '0-100m2'],['small', '100-1.000m2'],['medium', '1.000-10.000m2'],['large', '10.000-50.000m2'],['extralarge', '50.000-100.000m2']];
+export const type = [['interior', 'interior'], ['exterior','exterior'], ['industrial','industrial'], ['tend','tend']];
