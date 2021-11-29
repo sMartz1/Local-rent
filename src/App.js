@@ -1,9 +1,9 @@
 import './App.css';
-import Main from './components/Main';
-import ShowLocals from './components/ShowLocals';
-import UniqueLocal from './components/UniqueLocal';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Main from 'components/Main';
+import ShowLocals from 'components/ShowLocals';
+import UniqueLocal from 'components/UniqueLocal';
+import Header from 'components/Header';
+import Footer from 'components/Footer';
 
 function App() {
   let url = window.location.href;

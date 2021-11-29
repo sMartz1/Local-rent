@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './component.css'
 
-import LocalResume from '../../LocalResume';
+import LocalResume from 'components/LocalResume';
 //Recieves a list of locals to show.
 class FeaturedLocals extends Component {
     constructor(props) {
