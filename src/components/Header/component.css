@@ -8,6 +8,12 @@
     box-shadow: 1px 1px 5px black;
 }
 .search-modal{
-    position: absolute;
-    margin: auto;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
