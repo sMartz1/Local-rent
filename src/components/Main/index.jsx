@@ -20,8 +20,8 @@ class Main extends Component {
                     <SearchSection />
                 </header>
                 <main className="mainpage-content">
-                    <FeaturedLocals title={"Más demandados"} locals={locals}/>
-                    <FeaturedLocals title={"Últimas ofertas"} locals={locals}/>
+                    <FeaturedLocals key={1} title={"Más demandados"} locals={locals}/>
+                    <FeaturedLocals key={2} title={"Últimas ofertas"} locals={locals}/>
                 </main>
                 
             </div>  

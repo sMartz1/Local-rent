@@ -20,8 +20,8 @@ class FeaturedLocals extends Component {
         return (
           <div className="slider">
             <h2> {this.props.title}</h2>
-            <Slider {...settings}>
-              {this.props.locals.map((local)=><LocalResume local={local}/>)}
+            <Slider key={5} {...settings}>
+              {this.props.locals.map((local, id)=><LocalResume key={id+100} local={local}/>)}
             </Slider>
           </div>
         );

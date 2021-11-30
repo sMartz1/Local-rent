@@ -8,19 +8,29 @@ class Header extends Component {
         super(props);
         this.toggleSearch = this.toggleSearch.bind(this);
         this.state = { logoImage : "path", title:"Local RENT",
-                        showModal:false }
+                       showButton: this.props.showSeacrh, showModal:false }
     }
 
     toggleSearch(){
         this.setState(state=>({...state, showModal: !this.state.showModal}))
     }
 
+    
+
     render() { 
+        window.onscroll = ()=>{
+            console.log(document.body.scrollHeight);
+            if(document.body.scrollHeight < 200){
+                this.setState(state=>({...state, showButton: true}))
+            } else {
+                this.setState(state=>({...state, showButton: false}))
+            }
+        };
         return (<div className="header">
             <h2>{this.state.title}</h2>
             <img src={this.state.logoImage} alt="" />
             {
-                this.props.showSeacrh && 
+                this.state.showButton && 
                 <button onClick={this.toggleSearch}>
                     Buscar <img src={search} alt="open search modal" />
                 </button>

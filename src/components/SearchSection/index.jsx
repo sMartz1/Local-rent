@@ -14,8 +14,8 @@ class  SearchSection extends Component {
     render() { 
         return (
             <section className="mainpage-search">
-                <CustomSelect options={size}/>
-                <CustomSelect options={type}/>
+                <CustomSelect key={3} options={size}/>
+                <CustomSelect key={4} options={type}/>
                 <SearchBar/>
             </section>
         );
