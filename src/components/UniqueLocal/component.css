@@ -38,6 +38,7 @@
     display: flex;
     font-size: 1.2rem;
     justify-content: space-between;
+    align-items: center;
 }
 
 .local-specifications {
@@ -72,13 +73,13 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: 300px;
+    height: 350px;
 }
 
 .local-header>img {
     width: 100%;
     position: relative;
-    top: -70%;
+    top: -100%;
 }
 
 @media (max-width:400px) {
