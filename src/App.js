@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header showSeacrh={url === 'main'}/>
       {(url === 'main') && <Main />}
       {(url === 'locals-list') && <ShowLocals/>}
       {(url === 'local') && <UniqueLocal/>}

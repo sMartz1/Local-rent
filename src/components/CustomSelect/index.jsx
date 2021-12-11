@@ -9,7 +9,7 @@ class CustomSelect extends Component {
     render() { 
         return (<div className="custom-select">
             <select>
-                {this.props.options.map((option) => <option value={option[0]}>{option[1]}</option>)}
+                {this.props.options.map((option, id) => <option key={id+50} value={option[0]}>{option[1]}</option>)}
             </select>
         </div>  );
     }

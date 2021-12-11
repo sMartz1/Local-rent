@@ -4,9 +4,8 @@ import './component.css'
 import {size, type} from '../../data/selectOptions'
 import {locals} from '../../data/localInfo'
 
-import CustomSelect from '../CustomSelect'
+import SearchSection from '../SearchSection'
 import FeaturedLocals from './FeaturedLocals'
-import SearchBar from './SearchBar'
 
 class Main extends Component {
     constructor(props) {
@@ -15,15 +14,16 @@ class Main extends Component {
     }
     render() { 
         return (
-            <div className="main-container">
-                <h1>MAIN</h1>
-                <section className="search-container">
-                    <CustomSelect options={size}/>
-                    <CustomSelect options={type}/>
-                    <SearchBar/>
-                </section>
+            <div className="mainpage-container">
+                <header className="mainpage-header">
+                    <h1>Todos tenemos un sitio. Tu negocio, también.</h1>
+                    <SearchSection />
+                </header>
+                <main className="mainpage-content">
+                    <FeaturedLocals key={1} title={"Más demandados"} locals={locals}/>
+                    <FeaturedLocals key={2} title={"Últimas ofertas"} locals={locals}/>
+                </main>
                 
-                <FeaturedLocals locals={locals}/>
             </div>  
         );
     }
