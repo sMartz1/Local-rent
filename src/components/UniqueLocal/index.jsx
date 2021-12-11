@@ -1,6 +1,15 @@
 import React, { Component } from "react";
+import Divider from "@mui/material/Divider"
 import "./component.css";
 import Gallery from "./Gallery";
+import Map from "components/Map";
+import PhotoSizeSelectSmallIcon from '@mui/icons-material/PhotoSizeSelectSmall';
+import CottageOutlinedIcon from '@mui/icons-material/CottageOutlined';
+import MeetingRoomOutlinedIcon from '@mui/icons-material/MeetingRoomOutlined';
+import WcOutlinedIcon from '@mui/icons-material/WcOutlined';
+import EmojiTransportationOutlinedIcon from '@mui/icons-material/EmojiTransportationOutlined';
+import StarOutlinedIcon from '@mui/icons-material/StarOutlined';
+import { yellow } from "@mui/material/colors";
 class UniqueLocal extends Component {
   constructor(props) {
     super(props);
@@ -22,34 +31,54 @@ class UniqueLocal extends Component {
   render() {
     return (
       <div className="unique-local">
-       <div className="local-title"><p className="shadow-4">TITLE LOCAL{/*this.state.title*/}</p></div> 
        
-        <Gallery images={this.state.images} imgClass={"img-slider-header"} className={"gallery gallery-header"}speed={500} dots={false} autoPlay={true} autoPlaySpeed={15000} arrow={false}/>
        
-        <div className="local_content">
+        <div className="local-header">
+          <img src={this.state.images[0]} alt="" />
+        </div>
+       
+        <div className="local-content">
         
           <div className="local-information">
+             
           <div className="local-description">
-            <p className="title-description">Title local{/*this.state.title*/}<span> - Rating: {/*this.state.rating.score*/}4/5 de {/*this.state.rating.totalRatigns*/}24 puntuaciones</span></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi velit consequatur alias repellat corporis perferendis magnam quidem eaque aliquid excepturi veniam facilis, esse nisi, voluptates natus vitae. Omnis, aperiam.</p></div>
-            {/*this.state.description */}          
+             {/**this.specs.price*/}<p className="price-label">0€ <small>/dia</small></p>
+             <div className="center-description">
+             <p className="title-description">Title local{/*this.state.title*/}<span>{/*this.state.rating.score*/} 4/5 <StarOutlinedIcon sx={{ color:yellow[600],fontSize:15 }}  />  de 666 votos.</span></p>
+            <Divider />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Nesciunt eligendi velit consequatur alias repellat corporis perferendis magnam quidem 
+              eaque aliquid excepturi veniam facilis, esse nisi, voluptates natus vitae. Omnis, aperiam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Nesciunt eligendi velit consequatur alias repellat corporis perferendis magnam quidem 
+              eaque aliquid excepturi veniam facilis, esse nisi, voluptates natus vitae. Omnis, aperia
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Nesciunt eligendi velit consequatur alias repellat corporis perferendis magnam quidem 
+              eaque aliquid excepturi veniam facilis, esse nisi, voluptates natus vitae. Omnis, aperia</p>
+              
+            
+            {/*this.state.description */}      
+             </div>
+              
           <div className="local-specifications">
           {/*this.state.specs.map(spec=>{
             return <p>{spec}</p>
           }) */}
-          <p>200 m² construidos</p>
-          <p>Segunda mano/buen estado</p>
-          <p>Distribución 2 estancias</p>
-          <p>1 aseos o baños</p>
-          <p>Situado a pie de calle</p>
-          <p>2 escaparates</p>
-
+          <p> <PhotoSizeSelectSmallIcon /> 200 m² construidos</p>
+          <p><CottageOutlinedIcon />Segunda mano/buen estado</p>
+          <p><MeetingRoomOutlinedIcon />Distribución 2 estancias</p>
+          <p><WcOutlinedIcon />1 aseos o baños</p>
+          <p><EmojiTransportationOutlinedIcon />Situado a pie de calle</p>
           </div>
-          <div className="local-map">MAP WIP</div>  
-
+          </div>
+         
           </div>      
          
         </div>
+        <div className="local-map">
+            <Map />
+            </div>  
+
         <div className="footer-slider">
         <Gallery className={"footer-galery"} imgClass={"img-slider-footer"} images={this.state.images} speed={2000} dots={true} autoPlay={true} autoPlaySpeed={4000}/>
           </div>
