@@ -9,7 +9,7 @@ class FooterNav extends Component {
     }
     render() { 
         return ( <><ul>
-            {this.state.map(x =>{
+            {this.state.options.map(x =>{
                 return <li>{x}</li>
             })}
             </ul></> );

@@ -15,7 +15,7 @@ function App() {
       {(url === 'main') && <Main />}
       {(url === 'locals-list') && <ShowLocals/>}
       {(url === 'local') && <UniqueLocal/>}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
