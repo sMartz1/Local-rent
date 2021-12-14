@@ -8,9 +8,13 @@
     box-shadow: 1px 1px 5px black;
 
     display: flex;
+    align-items: center;
+}
+.header img{
+    margin:0 1rem;
 }
 .show-search-modal{
-    margin: auto 35rem;
+    margin: auto auto;
     padding: 0.5rem 2rem;
     font-weight: bold;
     background-color: rgb(76, 180, 221);
@@ -31,4 +35,15 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
+}
+.auth{
+    margin-left: auto;
+}
+.header a+a{
+    margin-right: 1rem;
+}
+
+
+.footer{
+    background-color: darkgrey; 
 }

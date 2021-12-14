@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import FooterNav from './FooterNav';
+// import './component.css'
 
 class Footer extends Component {
     constructor(props) {
@@ -10,7 +11,8 @@ class Footer extends Component {
     }
     render() { 
         
-        return (<div className="footer">
+        return (
+        <div className="footer">
             <FooterNav options={this.state.optionsA} />
             <FooterNav options={this.state.optionsB} />
             <div className="social-icons">
