@@ -47,8 +47,10 @@ class Header extends Component {
                 <SearchSection/>
             </div>}
 
-            <a className="auth" href="#" onClick={this.showSignIn}>Sign in</a>/
-            <a href="#" onClick={this.showSignUp}>Sign up</a>
+            <a className="link" href="#">Anúnciate (C:OfferLocal)</a>
+
+            <a  href="#" onClick={this.showSignIn}>Sign in</a>/
+            <a className="auth" href="#" onClick={this.showSignUp}>Sign up</a>
             {/* { this.state.signIn && <SignIn />}
             { this.state.signUp && <SignUp />} */}
             

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './component.css'
 
+// import CustomButton from '@mui/material/CustomButton'
+
 import {size, type} from '../../data/selectOptions'
 import {locals} from '../../data/localInfo'
 
@@ -24,7 +26,8 @@ class Main extends Component {
                     <FeaturedLocals key={1} title={"Más demandados"} locals={locals}/>
                     <FeaturedLocals key={2} title={"Últimas ofertas"} locals={locals}/>
                 </main>
-                <button>Contáctanos</button>
+                <button className='contact'>Contáctanos</button>
+                {/* <CustomButton className='contact'>Button</CustomButton> */}
                 {/* <Contact /> */}
                 
             </div>  

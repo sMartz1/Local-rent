@@ -12,7 +12,7 @@ class SearchBar extends Component {
         return (
         <div className="search-bar-container">
             <input type="text" placeholder="municipio, barrio, calle..."/>
-            <button><img src={search} alt="search button" /></button>
+            <a href="#"><img src={search} alt="search button" /></a>
         </div>  );
     }
 }

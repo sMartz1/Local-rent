@@ -9,7 +9,7 @@ class OfferLocal extends Component {
     render() { 
         return ( <div className="offer-local-container">
             <p>Alquila tu local con nosotros!</p>
-            <button>Añadir oferta de tu local</button>
+            <button>Anúnciate</button>
         </div> );
     }
 }
