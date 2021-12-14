@@ -8,7 +8,7 @@ import {locals} from '../../data/localInfo'
 
 import SearchSection from '../SearchSection'
 import FeaturedLocals from './FeaturedLocals'
-// import Contact from './Contact'
+import Contact from './Contact'
 
 class Main extends Component {
     constructor(props) {

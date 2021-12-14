@@ -3,8 +3,8 @@ import './component.css'
 import search from './img/search.png'
 import logo from './img/grow-shop.png'
 import SearchSection from '../SearchSection';
-// import SignUp from './SignUp';
-// import SignIn from './SignIn';
+import SignUp from './SignUp';
+import SignIn from './SignIn';
 
 class Header extends Component {
     constructor(props) {
@@ -51,8 +51,8 @@ class Header extends Component {
 
             <a  href="#" onClick={this.showSignIn}>Sign in</a>/
             <a className="auth" href="#" onClick={this.showSignUp}>Sign up</a>
-            {/* { this.state.signIn && <SignIn />}
-            { this.state.signUp && <SignUp />} */}
+            { this.state.signIn && <SignIn />}
+            { this.state.signUp && <SignUp />}
             
         </div>  );
     }

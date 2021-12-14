@@ -1,0 +1,10 @@
+.general-local{
+    display: flex;
+}
+.general-local img{
+    max-width: 13px;
+}
+.general-local button{
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
