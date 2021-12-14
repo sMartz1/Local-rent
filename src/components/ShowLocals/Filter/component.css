@@ -1,1 +1,4 @@
-.filter-section {}
+.filter-section {
+    background-color: red;
+    height: 50px;
+}

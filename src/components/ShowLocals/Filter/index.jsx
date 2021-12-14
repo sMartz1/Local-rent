@@ -9,6 +9,7 @@ class Filter extends Component {
     }
     render() { 
         return (<div className="filter-section">
+            FILTERSECTION
             <FilterSection />
             <FilterSection />
 

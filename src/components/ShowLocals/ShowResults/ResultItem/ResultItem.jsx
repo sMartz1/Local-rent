@@ -9,9 +9,8 @@ class ResultItem extends Component {
     }
     render() { 
         return (<div className="result-item">
-            {
-             //Item content
-            }
+            <h2>{this.state.item.title}</h2>
+            <h3>{this.state.item.price}</h3>
         </div>  );
     }
 }
